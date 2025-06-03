@@ -50,6 +50,7 @@ def create_datasets(dataset, physical_property, device):
             property_types = f.readline().strip().split()
             data_original = f.read().strip().split('\n\n')
 
+        print("property_types: ",property_types, "\n", ", physical_property: ",physical_property)
         """The physical_property is an energy, HOMO, or LUMO."""
         property_index = property_types.index(physical_property)
 
